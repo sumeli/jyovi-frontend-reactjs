@@ -1,0 +1,17 @@
+.talk {
+    margin-bottom: 40px;
+}
+
+.talk .bg-lavender {
+    background-color:rgb(192 148 228);
+}
+
+.talk .ring-lavender {
+    --tw-ring-color: rgb(192 148 228);
+}
+
+@media screen and (max-width: 900px){
+    .talk .justify-start {
+        margin-top: 10%;
+    }
+}
