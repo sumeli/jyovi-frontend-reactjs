@@ -1,0 +1,61 @@
+.signup-experts .text-blue-100 {
+    background-color: rgb(192 148 228);
+}
+
+.signup-experts {
+    margin-top: 50px;
+}
+
+.signup-experts .progress {
+    margin-bottom: 70px;
+}
+
+.signup-experts h2{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(192 148 228);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.signup-experts .border-gray-400 {
+    border: 1px solid rgb(192 148 228);
+}
+
+.signup-experts .bg-blue-700 {
+    background-color: rgb(192 148 228);
+}
+
+.prof{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.prof p {
+    margin-right: 30px;
+    color: grey;
+    position: fixed
+}
+
+.prof-dropdown .duration-100{
+    width: 170px;
+}
+
+.signup-experts .img_upload{
+    font-size: 18px;
+}
+
+.signup-experts .img-upload-div{
+    margin-top: 30px;
+}
+
+.img-upload-div input {
+    border-bottom: none;
+}
+
+@media screen and (max-width: 500px){
+    .signup-experts .border-gray-400{
+        padding: 20px;
+    }
+}

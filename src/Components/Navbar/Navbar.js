@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import logo from '../../Img/logo.jpg'
 import menuSymbol from '../../Img/menu-symbol-svgrepo-com.svg'
 import '../Home/home.css'
@@ -101,7 +102,9 @@ const Navbar = () => {
               " placeholder="Search..." />
                         </div>
                         <button className="loginbtn">
-                            Login / SignUp
+                            <Link to="/check">
+                                Login / SignUp
+                            </Link>
                         </button>
                     </div>
 

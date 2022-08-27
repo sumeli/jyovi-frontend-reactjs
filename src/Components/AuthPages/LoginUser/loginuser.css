@@ -2,6 +2,13 @@
     width: 35% !important;
 }
 
+.login-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 800px){
     .login-user .border-gray-400{
         width: 50% !important;
@@ -12,4 +19,13 @@
     .login-user .border-gray-400{
         width: 95% !important;
     }
+
+    .login-user .sm\:w-auto {
+        width: 50%;
+    }
+
+    .login-user .sm\:w-auto:hover {
+        background-color: none;
+    }
+
 }
