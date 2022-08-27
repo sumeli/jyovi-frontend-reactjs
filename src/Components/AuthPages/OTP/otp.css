@@ -1,0 +1,86 @@
+.otp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.otp h2 {
+    text-align: center;
+    font-size: 23px;
+}
+
+.otp p {
+    font-size: 18px;
+    text-align: center;
+    color: gray;
+    margin-top: 20px;
+}
+
+.otp .md\:p-4{
+    width: 50%;
+    border-color: rgb(192 148 228);
+}
+
+.otp-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.resend-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.resend-box span {
+    margin-right: 100px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.resend-box button {
+    background-color: rgb(192 148 228) ;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.otp-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.otp-btn button {
+    background-color: rgb(192 148 228) ;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 500px){
+    .otp h2{
+        font-size: 18px;
+    }
+
+    .otp p {
+        font-size: 14px;
+    }
+
+    .resend-box span{
+        margin-right: 15px;
+        font-size: 12px;
+    }
+
+    .resend-box {
+        margin-top: 30px;
+    }
+}

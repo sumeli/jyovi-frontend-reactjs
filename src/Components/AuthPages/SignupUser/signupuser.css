@@ -1,0 +1,35 @@
+.PhoneInputInput {
+    border: none;
+    border-bottom: solid 2px rgb(209 213 219);
+}
+
+.sign-up-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sign-up-user .border-gray-400 {
+    border: 2px solid rgb(192 148 228);
+    /* border-color: rgb(192 148 228); */
+    width: 50%;
+}
+
+.sign-up-user h2 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(192 148 228);
+}
+
+.sign-up-user .sm\:w-auto {
+    background-color: rgb(192 148 228);
+}
+
+@media screen and (max-width: 500px) {
+    .sign-up-user .border-gray-400 {
+        width: 95%;
+        padding: 20px;
+    }
+}
