@@ -1,0 +1,19 @@
+.experts-profile .text-lavender{
+    color: rgb(192 148 228);
+}
+
+.experts-profile .border-lavender{
+    border-color: rgb(192 148 228);
+}
+
+@media screen and (max-width: 900px){
+    .experts-profile .md\:p-4{
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .experts-profile .md\:p-4{
+        margin-top: 0px;
+    }
+}
