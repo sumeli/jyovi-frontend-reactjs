@@ -16,6 +16,7 @@ import OtpExperts from './Components/AuthPages/OTP/OtpExperts'
 import Page2 from './Components/AuthPages/SignUpExperts/Page2'
 import Page3 from './Components/AuthPages/SignUpExperts/Page3'
 import Success from './Components/AuthPages/SignUpExperts/Success'
+import Profession from './Components/Professions/Profession'
 
 const App = () => {
   return (
@@ -37,6 +38,7 @@ const App = () => {
         <Route path='/signup/experts/success' element={<Success />} />
         <Route path='/otp/customer' element={<Otp />} />
         <Route path='/otp/experts' element={<OtpExperts />} />
+        <Route path='/professions' element={<Profession />} />
       </Routes>
     </div>
   )
