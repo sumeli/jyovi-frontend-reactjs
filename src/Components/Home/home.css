@@ -9,12 +9,12 @@
     margin-right: 20px;
 }
 
-.loginbtn:hover {
-    background-color: black;
+.navbar-container .md\:p-0:hover{
+    color: rgb(192 148 228)
 }
 
-.navlink-home{
-    color:  rgb(192 148 228 / var(--tw-bg-opacity));
+.loginbtn:hover {
+    background-color: black;
 }
 
 .carousel .xl\:h-80{

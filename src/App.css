@@ -6,3 +6,7 @@
 .hide-scroll-bar::-webkit-scrollbar {
     display: none;
 }
+
+.active {
+    color: rgb(192 148 228)
+}

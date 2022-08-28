@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import logo from '../../Img/logo.jpg'
 import menuSymbol from '../../Img/menu-symbol-svgrepo-com.svg'
 import '../Home/home.css'
@@ -22,7 +22,7 @@ const Navbar = () => {
         setDrawers((prevState) => !prevState)
     }
     return (
-        <div>
+        <div className='navbar-container'>
             <nav className='
          bg-white
          border-gray-200
@@ -170,20 +170,7 @@ const Navbar = () => {
               md:bg-white
             ">
                                 <li>
-                                    <a href="#" className="
-                  block
-                  py-2
-                  pr-4
-                  pl-3
-                  text-white
-                  bg-lavender
-                  rounded
-                  md:bg-transparent md:text-lavender md:p-0
-                  navlink-home
-                " aria-current="page">Home</a>
-                                </li>
-                                <li>
-                                    <a href="expertspage.html" className="
+                                <NavLink to="/" className="
                   block
                   py-2
                   pr-4
@@ -194,10 +181,10 @@ const Navbar = () => {
                   md:hover:bg-transparent
                   md:hover:text-lavender
                   md:p-0
-                ">Experts</a>
+                ">Home</NavLink>
                                 </li>
                                 <li>
-                                    <a href="#" className="
+                                    <NavLink to="/professions/:id" className="
                   block
                   py-2
                   pr-4
@@ -208,10 +195,10 @@ const Navbar = () => {
                   md:hover:bg-transparent
                   md:hover:text-lavender
                   md:p-0
-                ">Blog</a>
+                ">Experts</NavLink>
                                 </li>
                                 <li>
-                                    <a href="#" className="
+                                    <NavLink to="/experts/:id" className="
                   block
                   py-2
                   pr-4
@@ -222,7 +209,21 @@ const Navbar = () => {
                   md:hover:bg-transparent
                   md:hover:text-lavender
                   md:p-0
-                ">Contact Us</a>
+                ">Blog</NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to="/contact" className="
+                  block
+                  py-2
+                  pr-4
+                  pl-3
+                  text-gray-700
+                  rounded
+                  hover:bg-gray-100
+                  md:hover:bg-transparent
+                  md:hover:text-lavender
+                  md:p-0
+                ">Contact Us</NavLink>
                                 </li>
                             </ul>
                         </div>

@@ -3,13 +3,14 @@ import DataContext from './dataContext'
 
 const DataState = (props) => {
 
-    const state= {
-        "sample":"Hey there!",
-    }
+  const state = {
+    "isLoggedIn": Boolean,
+    "token": String
+  }
 
   return (
     <DataContext.Provider value={state}>
-        {props.children}
+      {props.children}
     </DataContext.Provider>
   )
 }
