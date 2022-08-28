@@ -17,30 +17,33 @@ import Page2 from './Components/AuthPages/SignUpExperts/Page2'
 import Page3 from './Components/AuthPages/SignUpExperts/Page3'
 import Success from './Components/AuthPages/SignUpExperts/Success'
 import Profession from './Components/Professions/Profession'
+import DataState from './Context/datas/DataState'
 
 const App = () => {
   return (
-    <div>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/talkWithAstrologer' element={<TalkAstrologer />} />
-        <Route path='/expertsProfile' element={<Main />} />
-        <Route path='/contacts' element={<Contact />} />
-        <Route path='/loginConfirm' element={<LoginConfirm />} />
-        <Route path='/submitted' element={<Submitted />} />
-        <Route path='/check' element={<Check />} />
-        <Route path='/signup/customer' element={<SignUpUser />} />
-        <Route path='/login/customer' element={<LoginUser />} />
-        <Route path='/signup/experts' element={<SignUpExperts />} />
-        <Route path='/signup/experts/step2' element={<Page2 />} />
-        <Route path='/signup/experts/step3' element={<Page3 />} />
-        <Route path='/signup/experts/step3' element={<Page3 />} />
-        <Route path='/signup/experts/success' element={<Success />} />
-        <Route path='/otp/customer' element={<Otp />} />
-        <Route path='/otp/experts' element={<OtpExperts />} />
-        <Route path='/professions' element={<Profession />} />
-      </Routes>
-    </div>
+    <>
+      <DataState>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/talkWithAstrologer' element={<TalkAstrologer />} />
+          <Route path='/expertsProfile' element={<Main />} />
+          <Route path='/contacts' element={<Contact />} />
+          <Route path='/loginConfirm' element={<LoginConfirm />} />
+          <Route path='/submitted' element={<Submitted />} />
+          <Route path='/check' element={<Check />} />
+          <Route path='/signup/customer' element={<SignUpUser />} />
+          <Route path='/login/customer' element={<LoginUser />} />
+          <Route path='/signup/experts' element={<SignUpExperts />} />
+          <Route path='/signup/experts/step2' element={<Page2 />} />
+          <Route path='/signup/experts/step3' element={<Page3 />} />
+          <Route path='/signup/experts/step3' element={<Page3 />} />
+          <Route path='/signup/experts/success' element={<Success />} />
+          <Route path='/otp/customer' element={<Otp />} />
+          <Route path='/otp/experts' element={<OtpExperts />} />
+          <Route path='/professions' element={<Profession />} />
+        </Routes>
+      </DataState>
+    </>
   )
 }
 
